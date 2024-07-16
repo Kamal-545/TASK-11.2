@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS GRID</title>
+    <style>
+        .a {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 200px 200px 200px 200px;
+            gap: 10px;
+        }
+
+        .a1 {
+            background-color: orange;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 4;
+            grid-column-start: 1;
+             padding:70px;
+        }
+
+        .a2 {
+            background-color: orangered;
+            grid-column-end: 2;
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-row-end: 4;
+              padding:170px;
+        }
+
+        .a3 {
+            background-color: red;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+              padding:70px;
+
+        }
+
+        .a4 {
+            background-color: violet;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+             padding:70px;
+
+        }
+
+        .a5 {
+            background-color: violet;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+             padding:70px;
+
+        }
+
+        .a6 {
+            background-color: orange;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 4;
+              padding:70px;
+
+        }
+    </style>
+</head>
+
+<body bgcolor="skybule">
+    <h1><center>CSS GRID</center></h1>
+       <div class="a">
+        <div class="grid-item a1"><center>HEADER</center></div>
+        <div class="grid-item a2"><center>SIDEBAR</center></div>
+        <div class="grid-item a3"><center>CONTEXT 1</center></div>
+        <div class="grid-item a4"><center>CONTEXT 2<center></div>
+        <div class="grid-item a5"><center>CONTEXT 3</center></div>
+        <div class="grid-item a6"><center>FOOTER</center></div>
+     </div>
+</body>
+
+</html>
